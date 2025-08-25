@@ -1,6 +1,6 @@
 ### model
-model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
-image_max_pixels: 262144
+model_name_or_path: /kaggle/input/qwen2.5-vl/transformers/3b-instruct/2
+image_max_pixels: 2073600
 video_max_pixels: 16384
 trust_remote_code: true
 
@@ -14,7 +14,7 @@ freeze_language_model: false
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: mllm_demo,identity,alpaca_en_demo
+dataset: mydata
 template: qwen2_vl
 cutoff_len: 2048
 max_samples: 1000
